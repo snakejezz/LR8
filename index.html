@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -42,7 +42,12 @@
         <p>Цена: 4 990₽</p>
         <button onclick="showProduct('product3')">Подробнее</button>
       </div>
-    </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Телевизор">
+         <h3>Смарт-ТВ 42"</h3>
+        <p>Цена: 39 990₽</p>
+        <button onclick="showProduct('product4')">Подробнее</button>
+      </div>
   </section>
 
   <section id="product1" class="product-page" style="display: none;">
@@ -71,6 +76,15 @@
     <button onclick="addToCart()">Купить</button>
     <button onclick="showCatalog()">Назад к каталогу</button>
   </section>
+
+  <section id="product4" class="product-page" style="display: none;">
+  <h2>Смарт-ТВ 42"</h2>
+  <img src="https://via.placeholder.com/300" alt="Смарт-ТВ">
+  <p>Описание: Ультратонкий телевизор с поддержкой Wi-Fi, YouTube и Netflix.</p>
+  <p>Цена: 39 990₽</p>
+  <button onclick="addToCart()">Купить</button>
+  <button onclick="showCatalog()">Назад к каталогу</button>
+</section>
 
   <section id="about">
     <h2>О нас</h2>

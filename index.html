@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>АС МАГАЗИН</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>АС МАГАЗИН</h1>
+    <nav>
+      <ul>
+        <li><a href="#catalog">Каталог</a></li>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Любые товары по доступным ценам</h2>
+  </section>
+
+  <section id="catalog">
+    <h2>Каталог товаров</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Мебель">
+        <h3>Стул комнатный</h3>
+        <p>Цена: 2 999₽</p>
+        <button onclick="showProduct('product1')">Подробнее</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Техника">
+        <h3>Ноутбук ProBook</h3>
+        <p>Цена: 59 990₽</p>
+        <button onclick="showProduct('product2')">Подробнее</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Техника">
+        <h3>Наушники BassPro</h3>
+        <p>Цена: 4 990₽</p>
+        <button onclick="showProduct('product3')">Подробнее</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="product1" class="product-page" style="display: none;">
+    <h2>Стул комнатный</h2>
+    <img src="https://via.placeholder.com/300" alt="Стул">
+    <p>Описание: Удобный стул для дома. Цвет: белый. Материал: дерево.</p>
+    <p>Цена: 2 999₽</p>
+    <button onclick="addToCart()">Купить</button>
+    <button onclick="showCatalog()">Назад к каталогу</button>
+  </section>
+
+  <section id="product2" class="product-page" style="display: none;">
+    <h2>Ноутбук ProBook</h2>
+    <img src="https://via.placeholder.com/300" alt="Ноутбук">
+    <p>Описание: Лёгкий и производительный ноутбук для работы и развлечений.</p>
+    <p>Цена: 59 990₽</p>
+    <button onclick="addToCart()">Купить</button>
+    <button onclick="showCatalog()">Назад к каталогу</button>
+  </section>
+
+  <section id="product3" class="product-page" style="display: none;">
+    <h2>Наушники BassPro</h2>
+    <img src="https://via.placeholder.com/300" alt="Наушники">
+    <p>Описание: Глубокий бас, чистый звук, встроенный микрофон. Идеальны для музыки и общения.</p>
+    <p>Цена: 4 990₽</p>
+    <button onclick="addToCart()">Купить</button>
+    <button onclick="showCatalog()">Назад к каталогу</button>
+  </section>
+
+  <section id="about">
+    <h2>О нас</h2>
+    <p>Мы предлагаем широкий выбор товаров. Удобный интерфейс, быстрая доставка и поддержка клиентов — наш приоритет.</p>
+  </section>
+
+  <section id="contacts">
+    <h2>Контакты</h2>
+    <p>Адрес: г. Омск, ул. Проспект Мира, 10</p>
+    <p>Телефон: +7 (000) 123-45-67</p>
+    <p>Email: info@asmagaz.ru</p>
+    <form>
+      <input type="text" placeholder="Ваше имя">
+      <input type="email" placeholder="Ваш email">
+      <textarea placeholder="Ваше сообщение"></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 АС МАГАЗИН.</p>
+  </footer>
+
+  <div id="cart-notification" class="hidden">Товар добавлен в корзину</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
